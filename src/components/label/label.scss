@@ -1,0 +1,22 @@
+@import "../../app.scss";
+
+.label {
+    background: rgba(238, 139, 49, 0.85);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    // width: auto;
+    // height: 20px;
+    text-align: center;
+    z-index: 1;
+
+    @include mobile {
+        font-size: 12px;
+    }
+}
+
+.label:hover {
+    transform: translateY(-0.4rem);
+}

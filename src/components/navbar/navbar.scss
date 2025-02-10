@@ -1,0 +1,95 @@
+nav {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-color: transparent;
+    transition: all .4s ease;  // Updated transition to affect all properties
+    padding: 1.5rem 0;
+
+    .main-nav {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 9px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(15, 15, 15, 0.8);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        border-radius: 30px;
+        cursor: pointer;
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #EE8B31;   
+            transition: color .3s ease;  // Optional: add hover effect
+            
+            &:hover {
+                color: darken(#EE8B31, 10%);
+            }
+        }
+
+        .navbar {
+            display: flex;
+
+            .menu-item {
+                padding: 0 5px;
+            }
+            .menu-link {
+                color: white;
+                font-size: 1rem;
+                padding: 0 0.5rem;
+                font-weight: 300;
+                transition: color .3s ease;  // Added transition for hover effect
+                
+                &:hover {
+                    color: #EE8B31;
+                }
+            }
+        }
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Responsive Design - Shrinking Navbar
+@media (max-width: 1024px) {
+    .main-nav {
+        width: 90%; // Shrinks slightly on medium screens
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        width: 80%; // Shrinks more on smaller screens
+        padding: 8px 12px;
+    }
+
+    .menu-link {
+        font-size: 0.95rem;
+        padding: 0 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        width: 70%; // Shrinks further for very small screens
+        padding: 6px 10px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .menu-link {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}

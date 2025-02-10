@@ -1,0 +1,80 @@
+@import "../../app.scss";
+
+.about {
+    height: calc(112vh - 100px);
+    background: linear-gradient(180deg, #316273, #3994AC, #316273);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 900px; // Adjust size as needed
+        height: 900px;
+        background: radial-gradient(circle, rgba(164, 172, 205, 0.4) 10%, rgba(57, 148, 172, 0) 70%);
+        border-radius: 50%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        filter: blur(100px); // Softens the effect
+    }
+
+    .title-container {
+        position: relative;
+        margin-top: 80px;
+        margin-bottom: 20px; // Space between title and text
+        text-align: center; // Centers text inside
+
+        h1 {
+            font-size: 55px;
+            color: #A4ACCD;
+            // margin-bottom: -3%;
+            
+            @include mobile {
+                font-size: 38px;
+            }
+        }
+
+        hr {
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgba(238, 139, 49, 0.65);
+            border-width: 0.1cm;
+            width: 100vx;
+            
+        }
+    }
+
+    .text-container {
+        width: 70%; // Set a specific width
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; // Centers text inside
+
+        p {
+            font-size: 20px;
+            color: white;
+
+            @include mobile {
+               font-size: 18px;
+            }
+        }
+    }
+
+    .cards-container {
+        display: flex;
+        margin-top: 20px;
+        padding: 15px;
+        position: relative;
+        height: 400px;
+    }
+
+}
