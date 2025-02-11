@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 nav {
     position: absolute;
     left: 0px;
@@ -19,7 +21,14 @@ nav {
         border-radius: 30px;
         cursor: pointer;
 
+        @include mobile {
+            max-width: 300px;
+            padding: 9px 10px;
+        }
+
         .logo {
+            position: relative;
+            align-self: center;
             font-size: 1.2rem;
             font-weight: 800;
             color: #EE8B31;   
@@ -28,13 +37,21 @@ nav {
             &:hover {
                 color: darken(#EE8B31, 10%);
             }
+
+            @include mobile {
+                font-size: 0.7rem;
+            }
         }
 
         .navbar {
             display: flex;
+            align-items: center;
 
             .menu-item {
                 padding: 0 5px;
+                @include mobile {
+                    padding: 0 0.5px;
+                }
             }
             .menu-link {
                 color: white;
@@ -45,6 +62,10 @@ nav {
                 
                 &:hover {
                     color: #EE8B31;
+                }
+
+                @include mobile {
+                    font-size: 0.7rem;
                 }
             }
         }
@@ -59,37 +80,37 @@ a {
     text-decoration: none;
 }
 
-// Responsive Design - Shrinking Navbar
-@media (max-width: 1024px) {
-    .main-nav {
-        width: 90%; // Shrinks slightly on medium screens
-    }
-}
+// // Responsive Design - Shrinking Navbar
+// @media (max-width: 1024px) {
+//     .main-nav {
+//         width: 90%; // Shrinks slightly on medium screens
+//     }
+// }
 
-@media (max-width: 768px) {
-    .main-nav {
-        width: 80%; // Shrinks more on smaller screens
-        padding: 8px 12px;
-    }
+// @media (max-width: 768px) {
+//     .main-nav {
+//         width: 80%; // Shrinks more on smaller screens
+//         padding: 8px 12px;
+//     }
 
-    .menu-link {
-        font-size: 0.95rem;
-        padding: 0 0.4rem;
-    }
-}
+//     .menu-link {
+//         font-size: 0.95rem;
+//         padding: 0 0.4rem;
+//     }
+// }
 
-@media (max-width: 480px) {
-    .main-nav {
-        width: 70%; // Shrinks further for very small screens
-        padding: 6px 10px;
-    }
+// @media (max-width: 480px) {
+//     .main-nav {
+//         width: 70%; // Shrinks further for very small screens
+//         padding: 6px 10px;
+//     }
 
-    .logo {
-        font-size: 1rem;
-    }
+//     .logo {
+//         font-size: 1rem;
+//     }
 
-    .menu-link {
-        font-size: 0.9rem;
-        padding: 5px;
-    }
-}
+//     .menu-link {
+//         font-size: 0.9rem;
+//         padding: 5px;
+//     }
+// }
