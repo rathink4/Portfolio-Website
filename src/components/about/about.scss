@@ -27,9 +27,11 @@
 
     .title-container {
         position: relative;
+        flex: 1;
         margin-top: 80px;
         margin-bottom: 20px; // Space between title and text
         text-align: center; // Centers text inside
+        
 
         h1 {
             font-size: 55px;
@@ -37,7 +39,7 @@
             // margin-bottom: -3%;
             
             @include mobile {
-                font-size: 38px;
+                font-size: 33px;
             }
         }
 
@@ -59,12 +61,16 @@
         justify-content: center;
         text-align: center; // Centers text inside
 
+        @include mobile {
+            width: 80vw;
+        }
+
         p {
             font-size: 20px;
             color: white;
 
             @include mobile {
-               font-size: 18px;
+               font-size: 12px;
             }
         }
     }
@@ -75,6 +81,10 @@
         padding: 15px;
         position: relative;
         height: 400px;
+
+        @include mobile {
+            width: 400px;
+        }
     }
 
 }

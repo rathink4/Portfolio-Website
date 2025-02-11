@@ -16,10 +16,10 @@ const App = () => {
         <Navbar projectsRef={projectsRef}/>
         <Hero />
       </section>
-      {/* <section id="About">
+      <section id="About">
         <About />
       </section>
-      <section id="Skills">
+      {/* <section id="Skills">
         <Skills/>
       </section>
       <Projects ref={projectsRef}/>

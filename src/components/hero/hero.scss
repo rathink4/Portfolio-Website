@@ -169,8 +169,7 @@
         font-weight: bold;
 
         @include mobile {
-            bottom: -40px;
-            font-size: 40vh;
+            display: none;
         }
     }
 

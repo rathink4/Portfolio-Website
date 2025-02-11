@@ -39,7 +39,7 @@ const Navbar = ({ projectsRef }) => {
   return (
     <nav style={{ 
       position: isScrolled ? 'fixed' : 'absolute',
-      top: isScrolled ? '0' : 'auto',
+      top: isScrolled ? '10' : 'auto',
       zIndex: 1000
     }}>
       <div className="main-nav">
