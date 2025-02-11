@@ -19,13 +19,13 @@ const App = () => {
       <section id="About">
         <About />
       </section>
-      {/* <section id="Skills">
+      <section id="Skills">
         <Skills/>
       </section>
       <Projects ref={projectsRef}/>
       <section id="Contact">
         <Contact/>
-      </section> */}
+      </section>
     </div>
   );
 };

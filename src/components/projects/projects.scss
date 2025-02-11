@@ -15,7 +15,7 @@
 
         @include mobile {
             padding-top: calc(100vh - 100px);
-            font-size: 24px;
+            font-size: 17px;
         }
 
         .progress-bar {
@@ -45,7 +45,7 @@
             @include mobile {
                 flex-direction: column;
                 margin-top: 50px;
-                gap: 10px;
+                gap: 5px;
             }
 
             .image-container{
@@ -95,14 +95,14 @@
                 h2 {
                     font-size: 65px;
                     @include mobile {
-                        font-size: 26px;
+                        font-size: 20px;
                         letter-spacing: normal;
                     }
                 }
 
                 p {
                     color: white;
-                    font-size: 20px;
+                    font-size: 17px;
                     @include mobile {
                         font-size: 16px;
                     }
@@ -124,6 +124,9 @@
 
                     @include mobile {
                         cursor: pointer;
+                        font-size: 14px;
+                        padding: 5px;
+                        width: 150px;
                     }
 
                 }
